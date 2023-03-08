@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct MotoGether_iOSAppApp: App {
-    @StateObject var userStateViewModel = UserStateViewModel()
+    @StateObject var authViewModel = AuthViewModel()
     
     var body: some Scene {
         WindowGroup {
@@ -17,19 +17,23 @@ struct MotoGether_iOSAppApp: App {
                 ApplicationSwitcher()
             }
             .navigationViewStyle(.stack)
-            .environmentObject(userStateViewModel)
+            .environmentObject(authViewModel)
         }
     }
 }
 
 struct ApplicationSwitcher: View {
-    @EnvironmentObject var viewModel: AuthViewModel
+    @EnvironmentObject var authViewModel: AuthViewModel
     
     var body: some View {
-        if (viewModel.isAuthenticated) {
+        if authViewModel.isAuthenticated {
             ContentView()
         } else {
-            LoginView()
+            if authViewModel.showSignUpScreen {
+                SignUpView()
+            } else {
+                SignInView()
+            }
         }
     }
 }

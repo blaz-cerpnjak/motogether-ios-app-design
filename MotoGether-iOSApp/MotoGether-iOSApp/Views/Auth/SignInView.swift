@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct LoginView: View {
-    @EnvironmentObject var viewModel: AuthViewModel
+struct SignInView: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
     
     @State private var username: String = ""
     @State private var password: String = ""
@@ -16,7 +16,7 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
-            if (viewModel.isLoading) {
+            if (authViewModel.isLoading) {
                 ProgressView()
                     .padding()
             } else {
@@ -38,7 +38,7 @@ struct LoginView: View {
                     .cornerRadius(10)
                 
                 Button("Login") {
-                    login(username: username, password: password)
+                    signIn(username: username, password: password)
                 }
                 .foregroundColor(.white)
                 .frame(width: 300, height: 50)
@@ -48,22 +48,38 @@ struct LoginView: View {
                 
                 if error {
                     Text("Wrong username or password.")
+                        .padding()
+                }
+                
+                HStack(alignment: .center) {
+                    Text("You don't have an account?")
+                    Button("Join Us") {
+                        authViewModel.showSignUpScreen(visible: true)
+                    }
                 }
             }
         }
     }
     
-    private func login(username: String, password: String) {
+    private func signIn(username: String, password: String) {
         Task {
-            await viewModel.signIn (
+            let result = await authViewModel.signIn (
                 username: username, password: password
             )
+            
+            switch result {
+            case .failure(_):
+                error = true
+            case .success(_):
+                error = false
+            }
         }
     }
 }
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        SignInView()
+            .environmentObject(AuthViewModel())
     }
 }

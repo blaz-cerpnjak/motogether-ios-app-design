@@ -13,8 +13,9 @@
 		D1230CED29B6581700934620 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1230CEC29B6581700934620 /* Preview Assets.xcassets */; };
 		D1230CF529B65C0200934620 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1230CF429B65C0200934620 /* HomeView.swift */; };
 		D1230CF729B65C3500934620 /* AddPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1230CF629B65C3500934620 /* AddPathView.swift */; };
-		D12C9F2129B8AA140081D01F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2029B8AA140081D01F /* LoginView.swift */; };
+		D12C9F2129B8AA140081D01F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2029B8AA140081D01F /* SignInView.swift */; };
 		D12C9F2429B8B1930081D01F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2329B8B1930081D01F /* AuthViewModel.swift */; };
+		D12C9F2729B8BF1C0081D01F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2629B8BF1C0081D01F /* SignUpView.swift */; };
 		D1F3102129B7A3CA0021B9C5 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3102029B7A3CA0021B9C5 /* CustomTabBar.swift */; };
 		D1F3102329B7ADFA0021B9C5 /* CustomTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3102229B7ADFA0021B9C5 /* CustomTopBar.swift */; };
 /* End PBXBuildFile section */
@@ -27,8 +28,9 @@
 		D1230CEC29B6581700934620 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1230CF429B65C0200934620 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D1230CF629B65C3500934620 /* AddPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPathView.swift; sourceTree = "<group>"; };
-		D12C9F2029B8AA140081D01F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D12C9F2029B8AA140081D01F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		D12C9F2329B8B1930081D01F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D12C9F2629B8BF1C0081D01F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		D1F3102029B7A3CA0021B9C5 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		D1F3102229B7ADFA0021B9C5 /* CustomTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTopBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,7 +87,7 @@
 		D1230CF329B65BEE00934620 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D12C9F2029B8AA140081D01F /* LoginView.swift */,
+				D12C9F2529B8BF0B0081D01F /* Auth */,
 				D1230CF429B65C0200934620 /* HomeView.swift */,
 				D1230CF629B65C3500934620 /* AddPathView.swift */,
 			);
@@ -107,6 +109,15 @@
 				D12C9F2329B8B1930081D01F /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D12C9F2529B8BF0B0081D01F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D12C9F2029B8AA140081D01F /* SignInView.swift */,
+				D12C9F2629B8BF1C0081D01F /* SignUpView.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,12 +191,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1230CF529B65C0200934620 /* HomeView.swift in Sources */,
-				D12C9F2129B8AA140081D01F /* LoginView.swift in Sources */,
+				D12C9F2129B8AA140081D01F /* SignInView.swift in Sources */,
 				D1F3102129B7A3CA0021B9C5 /* CustomTabBar.swift in Sources */,
 				D1230CF729B65C3500934620 /* AddPathView.swift in Sources */,
 				D1230CE829B6581600934620 /* ContentView.swift in Sources */,
 				D1F3102329B7ADFA0021B9C5 /* CustomTopBar.swift in Sources */,
 				D1230CE629B6581600934620 /* MotoGether_iOSAppApp.swift in Sources */,
+				D12C9F2729B8BF1C0081D01F /* SignUpView.swift in Sources */,
 				D12C9F2429B8B1930081D01F /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
