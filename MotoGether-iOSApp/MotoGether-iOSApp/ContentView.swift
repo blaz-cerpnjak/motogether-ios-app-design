@@ -20,10 +20,6 @@ struct ContentView: View {
                 TabView(selection: $selectedTab) {
                     ForEach(Tab.allCases, id: \.rawValue) { tab in
                         HStack {
-                            /*Image(systemName: tab.rawValue)
-                            Text("\(tab.rawValue.capitalized)")
-                                .bold()
-                                .animation(nil, value: selectedTab)*/
                             switch tab {
                             case .map:
                                 HomeView()
@@ -43,6 +39,7 @@ struct ContentView: View {
             }
             
             VStack {
+                CustomTopBar()
                 Spacer()
                 CustomTabBar(selectedTab: $selectedTab)
             }

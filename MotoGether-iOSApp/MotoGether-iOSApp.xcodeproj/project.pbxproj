@@ -11,6 +11,12 @@
 		D1230CE829B6581600934620 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1230CE729B6581600934620 /* ContentView.swift */; };
 		D1230CEA29B6581700934620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1230CE929B6581700934620 /* Assets.xcassets */; };
 		D1230CED29B6581700934620 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1230CEC29B6581700934620 /* Preview Assets.xcassets */; };
+		D1230CF529B65C0200934620 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1230CF429B65C0200934620 /* HomeView.swift */; };
+		D1230CF729B65C3500934620 /* AddPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1230CF629B65C3500934620 /* AddPathView.swift */; };
+		D12C9F2129B8AA140081D01F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2029B8AA140081D01F /* LoginView.swift */; };
+		D12C9F2429B8B1930081D01F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2329B8B1930081D01F /* AuthViewModel.swift */; };
+		D1F3102129B7A3CA0021B9C5 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3102029B7A3CA0021B9C5 /* CustomTabBar.swift */; };
+		D1F3102329B7ADFA0021B9C5 /* CustomTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3102229B7ADFA0021B9C5 /* CustomTopBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		D1230CE729B6581600934620 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1230CE929B6581700934620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1230CEC29B6581700934620 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D1230CF429B65C0200934620 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D1230CF629B65C3500934620 /* AddPathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPathView.swift; sourceTree = "<group>"; };
+		D12C9F2029B8AA140081D01F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D12C9F2329B8B1930081D01F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		D1F3102029B7A3CA0021B9C5 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		D1F3102229B7ADFA0021B9C5 /* CustomTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTopBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,9 @@
 		D1230CE429B6581600934620 /* MotoGether-iOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				D1230CF829B65FA300934620 /* Navigation */,
+				D1230CF329B65BEE00934620 /* Views */,
+				D12C9F2229B8B15E0081D01F /* ViewModels */,
 				D1230CE529B6581600934620 /* MotoGether_iOSAppApp.swift */,
 				D1230CE729B6581600934620 /* ContentView.swift */,
 				D1230CE929B6581700934620 /* Assets.xcassets */,
@@ -65,6 +80,33 @@
 				D1230CEC29B6581700934620 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D1230CF329B65BEE00934620 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D12C9F2029B8AA140081D01F /* LoginView.swift */,
+				D1230CF429B65C0200934620 /* HomeView.swift */,
+				D1230CF629B65C3500934620 /* AddPathView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1230CF829B65FA300934620 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D1F3102029B7A3CA0021B9C5 /* CustomTabBar.swift */,
+				D1F3102229B7ADFA0021B9C5 /* CustomTopBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		D12C9F2229B8B15E0081D01F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D12C9F2329B8B1930081D01F /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1230CF529B65C0200934620 /* HomeView.swift in Sources */,
+				D12C9F2129B8AA140081D01F /* LoginView.swift in Sources */,
+				D1F3102129B7A3CA0021B9C5 /* CustomTabBar.swift in Sources */,
+				D1230CF729B65C3500934620 /* AddPathView.swift in Sources */,
 				D1230CE829B6581600934620 /* ContentView.swift in Sources */,
+				D1F3102329B7ADFA0021B9C5 /* CustomTopBar.swift in Sources */,
 				D1230CE629B6581600934620 /* MotoGether_iOSAppApp.swift in Sources */,
+				D12C9F2429B8B1930081D01F /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
