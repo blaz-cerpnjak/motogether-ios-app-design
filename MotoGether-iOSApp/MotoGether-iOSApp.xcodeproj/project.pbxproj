@@ -16,6 +16,7 @@
 		D12C9F2129B8AA140081D01F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2029B8AA140081D01F /* SignInView.swift */; };
 		D12C9F2429B8B1930081D01F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2329B8B1930081D01F /* AuthViewModel.swift */; };
 		D12C9F2729B8BF1C0081D01F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2629B8BF1C0081D01F /* SignUpView.swift */; };
+		D1E00F2029BA5BB0005CFCCA /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = D1E00F1F29BA5BB0005CFCCA /* SlidingTabView */; };
 		D1F3102129B7A3CA0021B9C5 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3102029B7A3CA0021B9C5 /* CustomTabBar.swift */; };
 		D1F3102329B7ADFA0021B9C5 /* CustomTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3102229B7ADFA0021B9C5 /* CustomTopBar.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E00F2029BA5BB0005CFCCA /* SlidingTabView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +138,9 @@
 			dependencies = (
 			);
 			name = "MotoGether-iOSApp";
+			packageProductDependencies = (
+				D1E00F1F29BA5BB0005CFCCA /* SlidingTabView */,
+			);
 			productName = "MotoGether-iOSApp";
 			productReference = D1230CE229B6581600934620 /* MotoGether-iOSApp.app */;
 			productType = "com.apple.product-type.application";
@@ -164,6 +169,9 @@
 				Base,
 			);
 			mainGroup = D1230CD929B6581600934620;
+			packageReferences = (
+				D1E00F1E29BA5BB0005CFCCA /* XCRemoteSwiftPackageReference "SlidingTabView" */,
+			);
 			productRefGroup = D1230CE329B6581600934620 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -399,6 +407,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1E00F1E29BA5BB0005CFCCA /* XCRemoteSwiftPackageReference "SlidingTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuynhNguyen/SlidingTabView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1E00F1F29BA5BB0005CFCCA /* SlidingTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1E00F1E29BA5BB0005CFCCA /* XCRemoteSwiftPackageReference "SlidingTabView" */;
+			productName = SlidingTabView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D1230CDA29B6581600934620 /* Project object */;
 }
