@@ -9,18 +9,19 @@ import SwiftUI
 
 struct PathsListView: View {
     var body: some View {
-        NavigationView {
-            List(0 ..< 10) { item in
-                PathRowView(path: Path(
-                    startDate: Date(), endDate: Date(),
-                    isConfirmed: true, isPrivate: false,
-                    isLimited: false, numberOfParticipantsLimited: 10,
-                    details: "Very nice path", isInterested: false)
-                ).background(
-                    NavigationLink("", destination: PathDetailsView()).opacity(0)
-                )
-            }
+        List(0 ..< 10) { item in
+            PathRowView(path: Path(
+                startDate: Date(), endDate: Date(),
+                isConfirmed: true, isPrivate: false,
+                isLimited: false, numberOfParticipantsLimited: 10,
+                details: "Very nice path", isInterested: false)
+            )
+            .background(Color.MainBackgroundColor)
+            .listRowInsets(EdgeInsets())
         }
+        .scrollContentBackground(.hidden)
+        .background(Color.MainBackgroundColor)
+        .listStyle(.grouped)
     }
 }
 

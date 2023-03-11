@@ -12,33 +12,47 @@ struct PathRowView: View {
     
     var body: some View {
         VStack {
-            HStack(spacing: 10) {
-                Text("Marko Voluhar")
-                    .font(.headline)
-                    .foregroundColor(Color.TextColorPrimary)
-                
-                Text("Novinec")
-                    .font(.caption)
-                    .foregroundColor(Color.TextColorSecondary)
-                
-                Spacer()
-                
-                Button(action: {}) {
-                    Image(systemName: "ellipsis")
+            VStack {
+                HStack(spacing: 10) {
+                    Text("John Doe")
+                        .font(.headline)
                         .foregroundColor(Color.TextColorPrimary)
-                        .rotationEffect(Angle(degrees: 90))
+                    
+                    Text("Beginner")
+                        .font(.caption)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color.TextColorSecondary)
+                    
+                    Spacer()
+                    
+                    Button(action: {}) {
+                        Image(systemName: "ellipsis")
+                            .foregroundColor(Color.TextColorPrimary)
+                            .rotationEffect(Angle(degrees: 90))
+                    }
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
+                PathRouteView(start: "SLO, Kamnik", dest: "SLO, Novo Mesto")
+                
+                FooterInfoView(
+                    date: "11.3.2023",
+                    duration: "70 min (93 km)",
+                    numberOfParticipants: 10
+                )
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            
-            PathRouteView(start: "SLO, Kamnik", dest: "SLO, Novo Mesto")
-            
-            FooterInfoView(
-                date: "11.3.2023",
-                duration: "70 min (93 km)",
-                numberOfParticipants: 10
+            .padding(10)
+            .background(Color.PathItemBackground)
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(Color.TextColorSecondary, lineWidth: 1.5)
             )
+            .cornerRadius(10)
         }
+        .padding(.leading, 20)
+        .padding(.trailing, 20)
+        .padding(.top, 10)
+        .padding(.bottom, 10)
     }
 }
 
@@ -62,7 +76,7 @@ struct PathRouteView: View {
             Text(start)
                 .foregroundColor(Color.PrimaryColor)
                 .font(.subheadline)
-                .fontWeight(.medium)
+                .fontWeight(.semibold)
                 .minimumScaleFactor(0.5)
                 .lineLimit(2)
             
@@ -79,7 +93,7 @@ struct PathRouteView: View {
             Text(dest)
                 .foregroundColor(Color.PrimaryColor)
                 .font(.subheadline)
-                .fontWeight(.medium)
+                .fontWeight(.semibold)
                 .minimumScaleFactor(0.5)
                 .lineLimit(2)
         }
@@ -97,7 +111,7 @@ struct FooterInfoView: View {
             Text(date)
                 .foregroundColor(Color.PrimaryColor)
                 .font(.subheadline)
-                .fontWeight(.medium)
+                .fontWeight(.semibold)
                 .minimumScaleFactor(0.5)
                 .lineLimit(2)
             
@@ -106,7 +120,7 @@ struct FooterInfoView: View {
             Text(duration)
                 .foregroundColor(Color.PrimaryColor)
                 .font(.subheadline)
-                .fontWeight(.medium)
+                .fontWeight(.semibold)
                 .minimumScaleFactor(0.5)
                 .lineLimit(2)
             
@@ -122,7 +136,7 @@ struct FooterInfoView: View {
                 Text(String(numberOfParticipants))
                     .foregroundColor(Color.PrimaryColor)
                     .font(.subheadline)
-                    .fontWeight(.medium)
+                    .fontWeight(.semibold)
                     .minimumScaleFactor(0.5)
                     .lineLimit(2)
             }

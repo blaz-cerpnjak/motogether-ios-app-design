@@ -25,12 +25,14 @@ struct HomeView: View {
             
             SlidingTabView(selection: $tabIndex,
                            tabs: ["Kratke razdalje", "Dolge razdalje"],
-                           font: Font.subheadline.weight(.semibold),
+                           font: Font.subheadline.weight(.bold),
                            animation: .easeInOut,
                            activeAccentColor: Color.PrimaryColor,
                            inactiveAccentColor: Color.TextColorSecondary,
                            selectionBarColor: Color.PrimaryColor
-            ).padding(.bottom, -16)
+            )
+            .padding(.bottom, -16)
+            .background(Color.MainBackgroundColor)
             
             if tabIndex == 0 {
                 PathsListView()

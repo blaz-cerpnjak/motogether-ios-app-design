@@ -90,7 +90,6 @@ struct ContentGroupView3: View {
                 .frame(maxWidth: .infinity)
         }
         .frame(height: 50)
-        .buttonStyle(.borderedProminent)
         .foregroundColor(.white)
         .fontWeight(.semibold)
         .background(Color.PrimaryColor)
