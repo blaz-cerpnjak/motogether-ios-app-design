@@ -54,6 +54,7 @@ struct TopText: View {
                     .foregroundColor(.gray)
             })
         }
-        .padding()
+        .padding(.leading, 20)
+        .padding(.trailing, 20)
     }
 }
