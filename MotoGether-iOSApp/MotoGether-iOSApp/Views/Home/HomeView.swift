@@ -18,17 +18,15 @@ struct HomeView: View {
             SlidingTabView(selection: $tabIndex,
                            tabs: ["Kratke razdalje", "Dolge razdalje"],
                            font: Font.subheadline.weight(.semibold),
-                           animation: .easeInOut)
-            
-            Spacer()
+                           animation: .easeInOut,
+                           inactiveAccentColor: .gray
+            ).padding(.bottom, -16)
             
             if tabIndex == 0 {
-                Text("Kratke")
+                PathsListView()
             } else {
-                Text("Dolge")
+                PathsListView()
             }
-            
-            Spacer()
         }
     }
 }

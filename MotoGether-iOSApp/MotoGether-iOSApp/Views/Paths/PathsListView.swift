@@ -10,7 +10,7 @@ import SwiftUI
 struct PathsListView: View {
     var body: some View {
         NavigationView {
-            List {
+            List(0 ..< 10) { item in
                 PathRowView(path: Path(
                     startDate: Date(), endDate: Date(),
                     isConfirmed: true, isPrivate: false,
