@@ -51,10 +51,11 @@ struct SignUpView: View {
                     .background(.thinMaterial.opacity(0.5))
                     .cornerRadius(10)
                 
-                Button("Login") {
+                Button("Sign Up") {
                     signUp(username: username, password: password)
                 }
                 .foregroundColor(.white)
+                .fontWeight(.semibold)
                 .frame(width: 300, height: 50)
                 .background(Color.blue)
                 .cornerRadius(10)
@@ -73,6 +74,9 @@ struct SignUpView: View {
                 }
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .edgesIgnoringSafeArea(.all)
+        .background(Color.MainBackgroundColor)
     }
     
     private func signUp(username: String, password: String) {

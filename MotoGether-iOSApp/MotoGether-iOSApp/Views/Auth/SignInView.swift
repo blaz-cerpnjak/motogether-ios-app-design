@@ -41,8 +41,9 @@ struct SignInView: View {
                     signIn(username: username, password: password)
                 }
                 .foregroundColor(.white)
+                .fontWeight(.semibold)
                 .frame(width: 300, height: 50)
-                .background(Color.blue)
+                .background(Color.PrimaryColor)
                 .cornerRadius(10)
                 .padding()
                 
@@ -56,9 +57,13 @@ struct SignInView: View {
                     Button("Join Us") {
                         authViewModel.showSignUpScreen(visible: true)
                     }
+                    .foregroundColor(Color.PrimaryColor)
                 }
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .edgesIgnoringSafeArea(.all)
+        .background(Color.MainBackgroundColor)
     }
     
     private func signIn(username: String, password: String) {
