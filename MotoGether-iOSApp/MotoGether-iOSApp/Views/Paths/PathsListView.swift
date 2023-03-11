@@ -11,16 +11,14 @@ struct PathsListView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink {
-                    PathDetailsView()
-                } label: {
-                    PathRowView(path: Path(
-                        startDate: Date(), endDate: Date(),
-                        isConfirmed: true, isPrivate: false,
-                        isLimited: false, numberOfParticipantsLimited: 10,
-                        details: "Very nice path", isInterested: false)
-                    )
-                }
+                PathRowView(path: Path(
+                    startDate: Date(), endDate: Date(),
+                    isConfirmed: true, isPrivate: false,
+                    isLimited: false, numberOfParticipantsLimited: 10,
+                    details: "Very nice path", isInterested: false)
+                ).background(
+                    NavigationLink("", destination: PathDetailsView()).opacity(0)
+                )
             }
         }
     }
