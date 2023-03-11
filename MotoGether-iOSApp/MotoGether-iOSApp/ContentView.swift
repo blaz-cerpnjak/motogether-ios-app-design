@@ -12,6 +12,9 @@ struct ContentView: View {
     
     init() {
         UITabBar.appearance().isHidden = true
+        UINavigationBar.appearance().barTintColor = UIColor(named: "PrimaryColor")
+        UINavigationBar.appearance().backgroundColor = UIColor(named: "PrimaryColor")
+        UITableView.appearance().backgroundColor = UIColor(named: "MainBackgroundColor")
     }
     
     var body: some View {
@@ -36,6 +39,7 @@ struct ContentView: View {
                         .tag(tab)
                     }
                 }
+                .padding(.top, 80)
             }
             
             VStack {

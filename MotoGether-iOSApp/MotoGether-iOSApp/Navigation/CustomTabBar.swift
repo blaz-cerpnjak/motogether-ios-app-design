@@ -24,7 +24,7 @@ struct CustomTabBar: View {
     private var tabColor: Color {
         switch selectedTab {
         case .map:
-            return .blue
+            return Color.PrimaryColor
         case .plus:
             return .green
         case .person:
@@ -56,9 +56,9 @@ struct CustomTabBar: View {
             }
             .frame(width: nil, height: 60)
             .background(.thinMaterial)
-            .cornerRadius(10)
-            .padding()
         }
+        .frame(width: nil, height: 60)
+        .background(.thinMaterial)
     }
 }
 

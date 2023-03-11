@@ -13,13 +13,23 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
-            TopText()
+            HStack {
+                Text("Skupinske vožnje")
+                    .font(.title2)
+                    .bold()
+                
+                Spacer()
+            }
+            .padding(.leading, 20)
+            .padding(.trailing, 20)
             
             SlidingTabView(selection: $tabIndex,
                            tabs: ["Kratke razdalje", "Dolge razdalje"],
                            font: Font.subheadline.weight(.semibold),
                            animation: .easeInOut,
-                           inactiveAccentColor: .gray
+                           activeAccentColor: Color.PrimaryColor,
+                           inactiveAccentColor: Color.TextColorSecondary,
+                           selectionBarColor: Color.PrimaryColor
             ).padding(.bottom, -16)
             
             if tabIndex == 0 {
@@ -28,31 +38,12 @@ struct HomeView: View {
                 PathsListView()
             }
         }
+        .background(Color.MainBackgroundColor)
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-    }
-}
-
-struct TopText: View {
-    var body: some View {
-        HStack {
-            Text("Skupinske vožnje")
-                .font(.title2)
-                .bold()
-            
-            Spacer()
-            
-            Button(action: {}, label: {
-                Image(systemName: "line.3.horizontal.decrease.circle")
-                    .font(.title)
-                    .foregroundColor(.gray)
-            })
-        }
-        .padding(.leading, 20)
-        .padding(.trailing, 20)
     }
 }
