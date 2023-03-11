@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct User: Identifiable {
+    var id = UUID().uuidString
+    var email: String
+    var name: String
+    var surname: String
+    var username: String
+    var password: String
+}

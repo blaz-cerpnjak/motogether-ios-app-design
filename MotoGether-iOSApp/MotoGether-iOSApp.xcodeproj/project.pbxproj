@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D11D947D29BC675D003C6304 /* PathsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11D947C29BC675D003C6304 /* PathsListView.swift */; };
+		D11D947F29BC67A2003C6304 /* PathDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11D947E29BC67A2003C6304 /* PathDetailsView.swift */; };
+		D11D948329BC6F80003C6304 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11D948229BC6F80003C6304 /* Color.swift */; };
+		D11D948629BC7047003C6304 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11D948529BC7047003C6304 /* Constants.swift */; };
+		D11D948829BC7078003C6304 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11D948729BC7078003C6304 /* UserDefaultsUtils.swift */; };
 		D1230CE629B6581600934620 /* MotoGether_iOSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1230CE529B6581600934620 /* MotoGether_iOSAppApp.swift */; };
 		D1230CE829B6581600934620 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1230CE729B6581600934620 /* ContentView.swift */; };
 		D1230CEA29B6581700934620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1230CE929B6581700934620 /* Assets.xcassets */; };
@@ -16,12 +21,21 @@
 		D12C9F2129B8AA140081D01F /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2029B8AA140081D01F /* SignInView.swift */; };
 		D12C9F2429B8B1930081D01F /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2329B8B1930081D01F /* AuthViewModel.swift */; };
 		D12C9F2729B8BF1C0081D01F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12C9F2629B8BF1C0081D01F /* SignUpView.swift */; };
+		D1BA122329BB9A3900427796 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BA122229BB9A3900427796 /* Path.swift */; };
+		D1BA122529BB9AB900427796 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BA122429BB9AB900427796 /* User.swift */; };
+		D1BA122729BB9B6F00427796 /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BA122629BB9B6F00427796 /* Club.swift */; };
+		D1BA122B29BB9CD700427796 /* PathRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BA122A29BB9CD700427796 /* PathRowView.swift */; };
 		D1E00F2029BA5BB0005CFCCA /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = D1E00F1F29BA5BB0005CFCCA /* SlidingTabView */; };
 		D1F3102129B7A3CA0021B9C5 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3102029B7A3CA0021B9C5 /* CustomTabBar.swift */; };
 		D1F3102329B7ADFA0021B9C5 /* CustomTopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F3102229B7ADFA0021B9C5 /* CustomTopBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D11D947C29BC675D003C6304 /* PathsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathsListView.swift; sourceTree = "<group>"; };
+		D11D947E29BC67A2003C6304 /* PathDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathDetailsView.swift; sourceTree = "<group>"; };
+		D11D948229BC6F80003C6304 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		D11D948529BC7047003C6304 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D11D948729BC7078003C6304 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		D1230CE229B6581600934620 /* MotoGether-iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MotoGether-iOSApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1230CE529B6581600934620 /* MotoGether_iOSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotoGether_iOSAppApp.swift; sourceTree = "<group>"; };
 		D1230CE729B6581600934620 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +46,10 @@
 		D12C9F2029B8AA140081D01F /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		D12C9F2329B8B1930081D01F /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		D12C9F2629B8BF1C0081D01F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D1BA122229BB9A3900427796 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		D1BA122429BB9AB900427796 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D1BA122629BB9B6F00427796 /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		D1BA122A29BB9CD700427796 /* PathRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathRowView.swift; sourceTree = "<group>"; };
 		D1F3102029B7A3CA0021B9C5 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		D1F3102229B7ADFA0021B9C5 /* CustomTopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTopBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,6 +66,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D11D948029BC685B003C6304 /* Paths */ = {
+			isa = PBXGroup;
+			children = (
+				D1BA122A29BB9CD700427796 /* PathRowView.swift */,
+				D11D947E29BC67A2003C6304 /* PathDetailsView.swift */,
+				D11D947C29BC675D003C6304 /* PathsListView.swift */,
+				D1230CF629B65C3500934620 /* AddPathView.swift */,
+			);
+			path = Paths;
+			sourceTree = "<group>";
+		};
+		D11D948129BC6F6F003C6304 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D11D948229BC6F80003C6304 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D11D948429BC7030003C6304 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D11D948529BC7047003C6304 /* Constants.swift */,
+				D11D948729BC7078003C6304 /* UserDefaultsUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		D1230CD929B6581600934620 = {
 			isa = PBXGroup;
 			children = (
@@ -67,11 +113,14 @@
 		D1230CE429B6581600934620 /* MotoGether-iOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				D1230CF829B65FA300934620 /* Navigation */,
-				D1230CF329B65BEE00934620 /* Views */,
-				D12C9F2229B8B15E0081D01F /* ViewModels */,
 				D1230CE529B6581600934620 /* MotoGether_iOSAppApp.swift */,
 				D1230CE729B6581600934620 /* ContentView.swift */,
+				D11D948129BC6F6F003C6304 /* Extensions */,
+				D1230CF829B65FA300934620 /* Navigation */,
+				D1BA122129BB99DA00427796 /* Models */,
+				D1230CF329B65BEE00934620 /* Views */,
+				D12C9F2229B8B15E0081D01F /* ViewModels */,
+				D11D948429BC7030003C6304 /* Utils */,
 				D1230CE929B6581700934620 /* Assets.xcassets */,
 				D1230CEB29B6581700934620 /* Preview Content */,
 			);
@@ -89,9 +138,9 @@
 		D1230CF329B65BEE00934620 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D11D948029BC685B003C6304 /* Paths */,
+				D1BA122929BB9CC200427796 /* Home */,
 				D12C9F2529B8BF0B0081D01F /* Auth */,
-				D1230CF429B65C0200934620 /* HomeView.swift */,
-				D1230CF629B65C3500934620 /* AddPathView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +169,24 @@
 				D12C9F2629B8BF1C0081D01F /* SignUpView.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		D1BA122129BB99DA00427796 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1BA122229BB9A3900427796 /* Path.swift */,
+				D1BA122429BB9AB900427796 /* User.swift */,
+				D1BA122629BB9B6F00427796 /* Club.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1BA122929BB9CC200427796 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D1230CF429B65C0200934620 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,15 +265,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1BA122B29BB9CD700427796 /* PathRowView.swift in Sources */,
+				D11D948629BC7047003C6304 /* Constants.swift in Sources */,
+				D11D947D29BC675D003C6304 /* PathsListView.swift in Sources */,
 				D1230CF529B65C0200934620 /* HomeView.swift in Sources */,
 				D12C9F2129B8AA140081D01F /* SignInView.swift in Sources */,
 				D1F3102129B7A3CA0021B9C5 /* CustomTabBar.swift in Sources */,
+				D11D948329BC6F80003C6304 /* Color.swift in Sources */,
 				D1230CF729B65C3500934620 /* AddPathView.swift in Sources */,
 				D1230CE829B6581600934620 /* ContentView.swift in Sources */,
 				D1F3102329B7ADFA0021B9C5 /* CustomTopBar.swift in Sources */,
 				D1230CE629B6581600934620 /* MotoGether_iOSAppApp.swift in Sources */,
+				D1BA122729BB9B6F00427796 /* Club.swift in Sources */,
 				D12C9F2729B8BF1C0081D01F /* SignUpView.swift in Sources */,
+				D1BA122329BB9A3900427796 /* Path.swift in Sources */,
+				D11D948829BC7078003C6304 /* UserDefaultsUtils.swift in Sources */,
+				D11D947F29BC67A2003C6304 /* PathDetailsView.swift in Sources */,
 				D12C9F2429B8B1930081D01F /* AuthViewModel.swift in Sources */,
+				D1BA122529BB9AB900427796 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
